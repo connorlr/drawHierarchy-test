@@ -7,7 +7,7 @@ class Capture {
       let pdfRenderer = UIGraphicsPDFRenderer()
       pdfRenderer.pdfData {context in
         context.beginPage()
-        rootView.drawHierarchy(in: rootView.bounds, afterScreenUpdates: false)
+        rootView.drawHierarchy(in: rootView.bounds, afterScreenUpdates: true)
       }
     }
   }
